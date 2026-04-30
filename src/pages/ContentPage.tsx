@@ -180,7 +180,7 @@ const ContentPage = () => {
               transition: 'all 0.2s',
             }}
           >
-            {tab === 'university' ? '🎓 University' : tab === 'secondary' ? '🏫 Secondary School' : '❓ Quizzes'}
+            {tab === 'university' ? ' University' : tab === 'secondary' ? ' Secondary School' : ' Quizzes'}
           </button>
         ))}
       </div>
@@ -267,8 +267,8 @@ const ContentPage = () => {
               </div>
 
               <div style={{ display: 'flex', gap: '16px', fontSize: '13px', color: 'var(--text-secondary)' }}>
-                <span>📋 {quiz.questions} Questions</span>
-                <span>👥 {quiz.attempts.toLocaleString()} Attempts</span>
+                <span> {quiz.questions} Questions</span>
+                <span>{quiz.attempts.toLocaleString()} Attempts</span>
               </div>
 
               <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
@@ -348,7 +348,7 @@ const ContentPage = () => {
                 onDragOver={e => { e.preventDefault(); (e.currentTarget as HTMLDivElement).style.borderColor = 'var(--primary-color)'; }}
                 onDragLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'var(--border-color)'; }}
               >
-                <div style={{ fontSize: '36px', marginBottom: '8px' }}>📁</div>
+                <div style={{ fontSize: '36px', marginBottom: '8px' }}></div>
                 <div style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text-primary)' }}>Drop files here or click to browse</div>
                 <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '4px' }}>PDF, Video, ZIP — max 1 GB</div>
               </div>

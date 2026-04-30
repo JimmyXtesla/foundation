@@ -113,14 +113,14 @@ const ContentPage = () => {
       <div className="grid grid-cols-2" style={{ marginBottom: '24px' }}>
         {activeTab === 'university' && <>
           <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: '#e0f2fe', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px' }}>🎓</div>
+          
             <div>
               <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>University Resources</div>
               <div style={{ fontSize: '24px', fontWeight: 700 }}>{universityContent.length} Files</div>
             </div>
           </div>
           <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: '#dcfce7', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px' }}>⬇️</div>
+           
             <div>
               <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Total Downloads</div>
               <div style={{ fontSize: '24px', fontWeight: 700 }}>{universityContent.reduce((s, i) => s + i.downloads, 0).toLocaleString()}</div>

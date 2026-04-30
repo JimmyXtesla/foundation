@@ -48,11 +48,6 @@ const quizzes: Quiz[] = [
   { id: 6, title: 'Mathematics Basics (Form 1)', subject: 'Mathematics', level: 'Secondary', questions: 20, difficulty: 'Easy', attempts: 4200, created: '15 Apr 2026' },
 ];
 
-const typeIcon: Record<string, string> = {
-  PDF: '📄',
-  Video: '🎬',
-  ZIP: '🗂️',
-};
 
 const difficultyColor: Record<QuizDifficulty, string> = {
   Easy: '#16a34a',

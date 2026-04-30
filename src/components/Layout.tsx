@@ -53,8 +53,6 @@ const Layout = () => {
             <span className={`ham-line ${drawerOpen ? 'open-2' : ''}`} />
             <span className={`ham-line ${drawerOpen ? 'open-3' : ''}`} />
           </button>
-
-          <div className="logo-icon">S4A</div>
           <div className="logo-text">Science for All</div>
         </div>
 

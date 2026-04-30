@@ -149,8 +149,8 @@ const Layout = () => {
             to={link.to}
             className={({ isActive }) => isActive ? 'mobile-tab-link active' : 'mobile-tab-link'}
           >
-            <span className="mobile-tab-icon">{link.emoji}</span>
-            <span className="mobile-tab-label">{link.short}</span>
+            <span className="mobile-tab-icon"></span>
+            <span className="mobile-tab-label"></span>
           </NavLink>
         ))}
       </nav>

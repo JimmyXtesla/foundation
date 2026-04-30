@@ -84,7 +84,6 @@ const Layout = () => {
       {/* ── Mobile Drawer ── */}
       <div className={`mobile-drawer ${drawerOpen ? 'drawer-open' : ''}`}>
         <div className="drawer-header">
-          <div className="logo-icon">S4A</div>
           <div className="logo-text">Science for All</div>
           <button className="drawer-close" onClick={() => setDrawerOpen(false)}>✕</button>
         </div>

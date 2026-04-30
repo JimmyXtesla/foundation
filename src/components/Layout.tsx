@@ -70,8 +70,8 @@ const Layout = () => {
         </nav>
 
         <div className="top-right">
-          <button className="icon-btn" aria-label="Search">🔍</button>
-          <button className="icon-btn" aria-label="Alerts">🔔</button>
+          <button className="icon-btn" aria-label="Search"></button>
+          <button className="icon-btn" aria-label="Alerts"></button>
           <div className="profile-avatar">AD</div>
         </div>
       </header>

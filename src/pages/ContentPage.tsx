@@ -209,7 +209,7 @@ const ContentPage = () => {
                 {currentContent.map(item => (
                   <tr key={item.id}>
                     <td style={{ fontWeight: 600 }}>
-                      {typeIcon[item.type]} {item.title}
+                       {item.title}
                     </td>
                     <td>
                       <span className="badge badge-info">{item.subject}</span>

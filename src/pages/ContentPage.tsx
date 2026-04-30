@@ -124,14 +124,14 @@ const ContentPage = () => {
         </>}
         {activeTab === 'secondary' && <>
           <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: '#fef9c3', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px' }}>🏫</div>
+           
             <div>
               <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Secondary Resources</div>
               <div style={{ fontSize: '24px', fontWeight: 700 }}>{secondaryContent.length} Files</div>
             </div>
           </div>
           <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: '#dcfce7', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px' }}>⬇️</div>
+          
             <div>
               <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Total Downloads</div>
               <div style={{ fontSize: '24px', fontWeight: 700 }}>{secondaryContent.reduce((s, i) => s + i.downloads, 0).toLocaleString()}</div>
@@ -140,14 +140,14 @@ const ContentPage = () => {
         </>}
         {activeTab === 'quizzes' && <>
           <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: '#f3e8ff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px' }}>❓</div>
+            
             <div>
               <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Active Quizzes</div>
               <div style={{ fontSize: '24px', fontWeight: 700 }}>{quizzes.length}</div>
             </div>
           </div>
           <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '12px', backgroundColor: '#dcfce7', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px' }}>👥</div>
+  
             <div>
               <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>Total Attempts</div>
               <div style={{ fontSize: '24px', fontWeight: 700 }}>{quizzes.reduce((s, q) => s + q.attempts, 0).toLocaleString()}</div>
